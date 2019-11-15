@@ -32,9 +32,9 @@ public class Libros_act extends AppCompatActivity {
         {
             result.setText("Precio final: "+String.valueOf(((5000*Integer.parseInt(etStock.getText().toString())+Integer.parseInt(etPrestamo.getText().toString())))));
         }
-        if(sp.getSelectedItem().equals("Revival"))//Se cambió de 12000 a 12500
+        if(sp.getSelectedItem().equals("Revival"))//Se cambió de 12000 a 12575
         {
-            result.setText("Precio final: "+String.valueOf(((12500*Integer.parseInt(etStock.getText().toString())+Integer.parseInt(etPrestamo.getText().toString())))));
+            result.setText("Precio final: "+String.valueOf(((12575*Integer.parseInt(etStock.getText().toString())+Integer.parseInt(etPrestamo.getText().toString())))));
 
         }
         if(sp.getSelectedItem().equals("Tesla"))//Se cambió de 25000 a 27500
