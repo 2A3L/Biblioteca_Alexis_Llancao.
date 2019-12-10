@@ -43,5 +43,13 @@ public class act_git extends AppCompatActivity {
         {
             tx.setText("El valor de El Alquimista: "+getIntent().getStringArrayExtra("Valores")[2]);
         }
+        if(sp.getSelectedItem().equals("El Poder"))
+        {
+            tx.setText("El valor de El Poder: "+getIntent().getStringArrayExtra("Valores")[3]);
+        }
+        if(sp.getSelectedItem().equals("Despertar"))
+        {
+            tx.setText("El valor de Despertar: "+getIntent().getStringArrayExtra("Valores")[4]);
+        }
     }
 }
