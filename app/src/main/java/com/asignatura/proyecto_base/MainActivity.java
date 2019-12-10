@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     {
         Intent i =  new Intent(this, act_git.class);
         String[] list = {"Farenheit","Revival", "El Alquimista", "El Poder", "Despertar"};
-        String[] value = {"5000", "12000", "45000", "88000", "156000"};
+        String[] value = {"7000", "22000", "45000", "88000", "156000"};
         i.putExtra("Lista",  list);
         i.putExtra("Valores",  value);
         startActivity(i);
