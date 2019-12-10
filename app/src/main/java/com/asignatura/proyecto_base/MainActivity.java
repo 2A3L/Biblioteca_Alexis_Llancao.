@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText etContra, etUser;
@@ -34,6 +36,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    public void mapa(View view)
+    {
+        Intent i =  new Intent(this, MapsActivity.class);
+        startActivity(i);
+    }
+
+    public void github(View view)
+    {
+        Intent i =  new Intent(this, act_git.class);
+        String[] list = {"Farenheit","Revival", "El Alquimista"};
+        String[] value = {"5000", "12000", "45000", "88000", "156000"};
+        i.putExtra("Lista",  list);
+        i.putExtra("Valores",  value);
+        startActivity(i);
     }
 
     class Task extends AsyncTask<String, Void, String>
@@ -68,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getBaseContext(), "logueado correctamente:"+ etUser.getText().toString(), Toast.LENGTH_SHORT).show();
             Intent i = new Intent(getBaseContext(), HOME_ACT.class);
             startActivity(i);
-
 
         }
 

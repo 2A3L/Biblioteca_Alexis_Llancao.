@@ -13,7 +13,8 @@ public class HOME_ACT extends AppCompatActivity {
     private ViewFlipper vf;
     private int[] Image = {R.drawable.a, R.drawable.b, R.drawable.c};
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home__act);
 
@@ -24,6 +25,7 @@ public class HOME_ACT extends AppCompatActivity {
             Instrucciones(Image[i]);
         }
     }
+
 
     public void Instrucciones(int i)
     {
@@ -38,6 +40,7 @@ public class HOME_ACT extends AppCompatActivity {
         vf.setOutAnimation(this, android.R.anim.slide_out_right);
     }
 
+
     public void Libros(View view)
     {
         Intent i = new Intent(this, Libros_act.class);
@@ -50,6 +53,17 @@ public class HOME_ACT extends AppCompatActivity {
         Intent i = new Intent(this, Info_act.class);
         startActivity(i);
     }
+    public void base(View view)
+    {
+        Intent i = new Intent(this, base_act.class);
+        startActivity(i);
+    }
+    public void security(View view)
+    {
+        Intent i = new Intent(this, Sec_act.class);
+        startActivity(i);
+    }
+
 
 
 }
